@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Md Hasnain: Fire Protection Site Engineer in Bangalore. Fire alarm, sprinkler, NOVEC and VESDA systems.">
+  <title>Md Hasnain | Fire Protection Site Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header anim">
+    <a href="#home" class="logo">Hasnain <span>Portfolio</span></a>
+    <button id="menu-icon" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <nav class="navbar anim">
+      <a href="#home" class="active">Home</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#services">Systems</a>
+      <a href="#demo">Demo</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home anim" id="home">
+      <div class="home-content">
+        <h1>Hi, My name is <span class="purple">Md Hasnain</span></h1>
+        <h3 class="text-animation">and I am a <span id="element"></span></h3>
+        <p class="summary">Fire Protection Site Engineer with 2.3+ years of experience in fire alarm and firefighting systems: site execution, installation, testing, commissioning and maintenance.</p>
+
+        <div class="social-icons anim">
+          <a href="https://www.instagram.com/webwizard0786/profilecard/?igsh=MWVoZ2ZkNjdramdmMw==" aria-label="Instagram"><img src="ins.png" alt=""></a>
+          <a href="https://x.com/home" aria-label="X"><img src="tw.png" alt=""></a>
+          <a href="https://www.linkedin.com/in/md-hasnain-a949562b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><img src="lin.png" alt=""></a>
+          <a href="https://github.com/hanain786/" aria-label="GitHub"><img src="git.png" alt=""></a>
+        </div>
+
+        <div class="btn-group anim">
+          <a href="mailto:mdhasnin1309@gmail.com" class="btn">Hire Me</a>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+      </div>
+
+      <div class="home-img anim">
+        <img src="has.png" alt="Md Hasnain">
+      </div>
+    </section>
+
+    <section class="education anim" id="experience">
+      <h2 class="heading">Experience</h2>
+      <div class="timeline-items anim">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">July 2024 - Present</div>
+          <div class="timeline-content">
+            <h3>Site Supervisor</h3>
+            <h4>ZM Digitech Communications Private Limited</h4>
+            <p>Manpower planning, site coordination, progress monitoring and quality control for fire alarm and firefighting projects.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item anim">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Project</div>
+          <div class="timeline-content">
+            <h3>Best Buy (BBY), Bangalore</h3>
+            <h4>Site Supervisor</h4>
+          </div>
+        </div>
+
+        <div class="timeline-item anim">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Project</div>
+          <div class="timeline-content">
+            <h3>JPMC, Bangalore</h3>
+            <h4>Site Engineer</h4>
+          </div>
+        </div>
+
+        <div class="timeline-item anim">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Project</div>
+          <div class="timeline-content">
+            <h3>Intuit, Bangalore</h3>
+            <h4>Site Engineer</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <section class="demo" id="demo" aria-labelledby="demo-title">
+    <div class="wrap">
+      <div class="head">
+        <h2 class="heading" id="demo-title">See how a fire system responds</h2>
+        <p>Click a device on the floor plan, or use the buttons. The steps light up in the order they happen on a typical project.</p>
+      </div>
+
+      <div class="stage">
+        <div class="picks" role="group" aria-label="Choose an event to trigger">
+          <button class="pick" type="button" data-scn="smoke" aria-pressed="false">Smoke detector</button>
+          <button class="pick" type="button" data-scn="mcp" aria-pressed="false">Manual call point</button>
+          <button class="pick" type="button" data-scn="sprinkler" aria-pressed="false">Sprinkler flow</button>
+          <button class="pick" type="button" data-scn="gas" aria-pressed="false">NOVEC gas release</button>
+          <button class="pick reset" type="button" id="reset">Reset panel</button>
+        </div>
+
+        <div class="planwrap">
+          <div class="plan">
+            <svg viewBox="0 0 600 380" role="img" aria-label="Floor plan with a fire alarm panel, smoke detectors, a manual call point, sounders, sprinkler heads, fire pumps and a NOVEC gas cylinder in the server room">
+              <!-- zone tints -->
+              <rect class="zone" id="z1" x="20" y="20" width="190" height="150"/>
+              <rect class="zone" id="z2" x="210" y="20" width="190" height="150"/>
+              <rect class="zone" id="z3" x="400" y="20" width="180" height="150"/>
+              <rect class="zone" id="z4" x="170" y="210" width="410" height="150"/>
+              <rect class="cloud" id="gas" x="400" y="20" width="180" height="150"/>
+
+              <!-- walls -->
+              <rect class="wall" x="20" y="20" width="560" height="340"/>
+              <path class="wall-in" d="M20 170 H90 M120 170 H260 M290 170 H430 M460 170 H580"/>
+              <path class="wall-in" d="M20 210 H60 M90 210 H280 M310 210 H480 M510 210 H580"/>
+              <path class="wall-in" d="M210 20 V170 M400 20 V170 M170 210 V360 M430 210 V360"/>
+
+              <text class="lbl" x="34" y="45">Office A</text>
+              <text class="lbl" x="224" y="45">Office B</text>
+              <text class="lbl" x="414" y="45">Server room</text>
+              <text class="lbl" x="34" y="234">Pump room</text>
+              <text class="lbl" x="184" y="234">Open workspace</text>
+              <text class="lbl" x="444" y="234">Exit stair</text>
+
+              <!-- sprinkler pipe and NOVEC pipe -->
+              <path class="pipe" id="pipe" d="M40 190 H560 M110 190 V100 M300 190 V100 M300 190 V278 M40 190 V275 H70 M40 275 V322 H128"/>
+              <path class="gpipe" d="M555 120 V100 H497"/>
+
+              <!-- flow switch -->
+              <g class="dev-g" id="flow"><rect class="dev" x="68" y="184" width="16" height="12" rx="1"/></g>
+
+              <!-- sprinkler heads -->
+              <g class="dev-g hit" id="sp1" tabindex="0" role="button" aria-label="Trigger sprinkler head in Office A"><circle class="pad" cx="110" cy="100" r="16"/><circle class="dev" cx="110" cy="100" r="7"/><path class="cross" d="M105 95 L115 105 M115 95 L105 105"/></g>
+              <g class="dev-g hit" id="sp2" tabindex="0" role="button" aria-label="Trigger sprinkler head in Office B"><circle class="pad" cx="300" cy="100" r="16"/><circle class="dev" cx="300" cy="100" r="7"/><path class="cross" d="M295 95 L305 105 M305 95 L295 105"/></g>
+              <g class="dev-g hit" id="sp3" tabindex="0" role="button" aria-label="Trigger sprinkler head in Open workspace"><circle class="pad" cx="300" cy="278" r="16"/><circle class="dev" cx="300" cy="278" r="7"/><path class="cross" d="M295 273 L305 283 M305 273 L295 283"/></g>
+
+              <!-- smoke detectors -->
+              <g class="dev-g hit" id="d11" tabindex="0" role="button" aria-label="Trigger smoke detector D-11 in Office A"><circle class="pad" cx="160" cy="66" r="16"/><circle class="dev" cx="160" cy="66" r="9"/><circle class="dot" cx="160" cy="66" r="3"/></g>
+              <g class="dev-g hit" id="d12" tabindex="0" role="button" aria-label="Trigger smoke detector D-12 in Office B"><circle class="pad" cx="350" cy="66" r="16"/><circle class="dev" cx="350" cy="66" r="9"/><circle class="dot" cx="350" cy="66" r="3"/></g>
+              <g class="dev-g hit" id="d14" tabindex="0" role="button" aria-label="Trigger smoke detector D-14 in Open workspace"><circle class="pad" cx="340" cy="316" r="16"/><circle class="dev" cx="340" cy="316" r="9"/><circle class="dot" cx="340" cy="316" r="3"/></g>
+              <g class="dev-g hit" id="d13" tabindex="0" role="button" aria-label="Trigger server room detector D-13 to start a gas release"><circle class="pad" cx="440" cy="76" r="16"/><circle class="dev" cx="440" cy="76" r="9"/><circle class="dot" cx="440" cy="76" r="3"/></g>
+              <g class="dev-g hit" id="d15" tabindex="0" role="button" aria-label="Trigger server room detector D-15 to start a gas release"><circle class="pad" cx="540" cy="76" r="16"/><circle class="dev" cx="540" cy="76" r="9"/><circle class="dot" cx="540" cy="76" r="3"/></g>
+
+              <!-- NOVEC nozzle and cylinder -->
+              <g class="dev-g gasg" id="novec"><circle class="dev" cx="490" cy="100" r="7"/><path class="cross" d="M490 88 V94 M490 106 V112 M478 100 H484 M496 100 H502"/><rect class="dev" x="548" y="120" width="14" height="34" rx="4"/></g>
+              <text class="lbl-s" x="484" y="150">NOVEC</text>
+
+              <!-- sounders -->
+              <g class="dev-g snd" id="s1"><circle class="dev" cx="60" cy="146" r="6"/><path class="wave" d="M70 140 Q76 146 70 152 M75 136 Q83 146 75 156"/></g>
+              <g class="dev-g snd" id="s2"><circle class="dev" cx="270" cy="146" r="6"/><path class="wave" d="M280 140 Q286 146 280 152 M285 136 Q293 146 285 156"/></g>
+              <g class="dev-g snd" id="s3"><circle class="dev" cx="420" cy="146" r="6"/><path class="wave" d="M430 140 Q436 146 430 152 M435 136 Q443 146 435 156"/></g>
+              <g class="dev-g snd" id="s4"><circle class="dev" cx="250" cy="330" r="6"/><path class="wave" d="M260 324 Q266 330 260 336 M265 320 Q273 330 265 340"/></g>
+
+              <!-- manual call point -->
+              <g class="dev-g hit" id="mcp" tabindex="0" role="button" aria-label="Trigger manual call point at the exit stair"><circle class="pad" cx="455" cy="270" r="17"/><rect class="dev" x="447" y="262" width="16" height="16" rx="2"/><rect class="dot" x="451" y="266" width="8" height="8"/></g>
+
+              <!-- fire alarm panel -->
+              <g class="dev-g panelbox" id="facp"><rect class="dev" x="186" y="246" width="20" height="30" rx="2"/><circle class="led" cx="196" cy="254" r="3"/><path class="cross" d="M190 263 H202 M190 269 H202"/></g>
+              <text class="lbl-s" x="182" y="294">Panel</text>
+
+              <!-- pumps -->
+              <g class="pump dev-g" id="mainpump"><circle class="dev" cx="88" cy="275" r="18"/><g transform="translate(88 275)"><g class="imp"><path d="M-9 0 H9 M0 -9 V9"/></g></g></g>
+              <text class="lbl-s" x="46" y="311">Main pump</text>
+              <g class="pump dev-g" id="jockey"><circle class="dev" cx="138" cy="322" r="10"/><g transform="translate(138 322)"><g class="imp"><path d="M-5 0 H5 M0 -5 V5"/></g></g></g>
+              <text class="lbl-s" x="108" y="349">Jockey</text>
+            </svg>
+          </div>
+          <ul class="legend" aria-label="Legend">
+            <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle class="dev" cx="9" cy="9" r="7"/><circle class="dot" cx="9" cy="9" r="2.5"/></svg>Smoke detector</li>
+            <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><rect class="dev" x="2" y="2" width="14" height="14" rx="2"/><rect class="dot" x="6" y="6" width="6" height="6"/></svg>Manual call point</li>
+            <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle class="dev" cx="9" cy="9" r="5"/></svg>Sounder</li>
+            <li><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle class="dev" cx="9" cy="9" r="6.5"/><path class="cross" d="M6 6 L12 12 M12 6 L6 12"/></svg>Sprinkler head</li>
+            <li><svg width="22" height="18" viewBox="0 0 22 18" aria-hidden="true"><path class="pipe" d="M1 9 H21"/></svg>Sprinkler pipe</li>
+          </ul>
+        </div>
+
+        <div class="panel" id="panel">
+          <div class="lcd" id="lcd" aria-live="polite"><span id="lcd1">SYSTEM NORMAL</span><span id="lcd2">ALL ZONES OK</span></div>
+          <ul class="leds" aria-label="Panel indicators">
+            <li data-led="fire">Fire</li>
+            <li data-led="snd">Sounders</li>
+            <li data-led="pump">Pumps</li>
+            <li data-led="gas">Gas release</li>
+          </ul>
+        </div>
+
+        <ol class="seq" id="steps"><li class="hint">Nothing has triggered yet. Choose an event to see each step light up.</li></ol>
+
+        <p class="note">Illustrative sequence. Each project follows its own approved cause-and-effect matrix.</p>
+      </div>
+    </div>
+  </section>
+
+    <section class="education anim" id="education">
+      <h2 class="heading">Education</h2>
+      <div class="timeline-items anim">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022</div>
+          <div class="timeline-content">
+            <h3>Secondary Education (12th)</h3>
+            <p>BSEB</p>
+          </div>
+        </div>
+
+        <div class="timeline-item anim">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2025</div>
+          <div class="timeline-content">
+            <h3>B.Sc. in Physics</h3>
+          </div>
+        </div>
+      </div>
+      <div class="tags" aria-label="Software skills and languages">
+        <span>MS Word</span><span>MS Excel</span><span>MS PowerPoint</span><span>English</span><span>Hindi</span>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="heading">Systems I Work On</h2>
+      <div class="services-container">
+        <div class="services-box"><div class="services-info"><h4>Sprinkler Systems</h4><p>Installation, testing and maintenance.</p></div></div>
+        <div class="services-box"><div class="services-info"><h4>Fire Alarm Systems</h4><p>Configuration and troubleshooting.</p></div></div>
+        <div class="services-box"><div class="services-info"><h4>Public Address (PA)</h4><p>Commissioning of PA systems.</p></div></div>
+        <div class="services-box"><div class="services-info"><h4>NOVEC Gas Suppression</h4><p>Installation and monitoring.</p></div></div>
+        <div class="services-box"><div class="services-info"><h4>VESDA</h4><p>Implementation of very early smoke detection systems.</p></div></div>
+        <div class="services-box"><div class="services-info"><h4>Water Leak Detection (WLD)</h4><p>Installation and servicing.</p></div></div>
+        <div class="services-box"><div class="services-info"><h4>Rodent Repellent Systems</h4><p>Supervision of installation work.</p></div></div>
+        <div class="services-box"><div class="services-info"><h4>Firefighting Troubleshooting</h4><p>Fault finding on firefighting and fire alarm systems.</p></div></div>
+      </div>
+      <div class="tags" aria-label="Key responsibilities">
+        <span>Manpower Planning</span><span>Site Coordination</span><span>Progress Monitoring</span><span>Quality Control Coordination</span>
+      </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <p class="contact-info">
+        <a href="mailto:mdhasnin1309@gmail.com">mdhasnin1309@gmail.com</a><br>
+        <a href="tel:+917091836042">+91 70918 36042</a><br>
+        Bellandur, Bangalore, Karnataka
+      </p>
+      <form id="contact-form">
+        <div class="input-group">
+          <div class="input-box">
+            <input type="text" name="name" placeholder="Full Name" aria-label="Full name" required>
+            <input type="email" name="email" placeholder="Email" aria-label="Email" required>
+          </div>
+          <div class="input-box">
+            <input type="tel" name="phone" placeholder="Phone no." aria-label="Phone number">
+            <input type="text" name="subject" placeholder="Subject" aria-label="Subject">
+          </div>
+        </div>
+        <div class="input-group-2">
+          <textarea name="message" rows="10" placeholder="Your Message" aria-label="Your message" required></textarea>
+          <input type="submit" value="Send Message" class="btn">
+        </div>
+      </form>
+      <p class="form-status" id="form-status" role="status"></p>
+    </section>
+
+    <footer class="footer">
+      <div class="social">
+        <a href="https://www.instagram.com/webwizard0786/profilecard/?igsh=MWVoZ2ZkNjdramdmMw==" aria-label="Instagram"><img src="ins.png" alt=""></a>
+        <a href="https://x.com/home" aria-label="X"><img src="tw.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/md-hasnain-a949562b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><img src="lin.png" alt=""></a>
+        <a href="https://github.com/hanain786/" aria-label="GitHub"><img src="git.png" alt=""></a>
+      </div>
+      <ul class="list">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#services">Systems</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="copyright">&copy; Md Hasnain | All Rights Reserved</p>
+    </footer>
+  </main>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
